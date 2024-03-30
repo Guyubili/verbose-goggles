@@ -75,4 +75,4 @@ label1=to_categorical(label1, num_classes=10)
 #测试模型
 scores=model.evaluate(data1,label1,verbose=0)
 print(scores)
-r_square(data1,label1,model,types=1)
+r_square(data1,label1,model,types=1) #types=1表示label1使用热独编码，等于0就不是
